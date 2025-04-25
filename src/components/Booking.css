@@ -1,0 +1,112 @@
+/* Font Setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #2b2b2b;
+}
+
+/* Booking Bar Container */
+.booking-bar {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 900px;
+  margin: 2rem auto;
+  margin-top: 100px;
+}
+
+/* Jet Tabs */
+.jet-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.jet-tab {
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.jet-tab.active {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #1f1f1f;
+}
+
+/* Trip Types */
+.trip-types {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.trip-types label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.trip-types input {
+  margin-right: 0.5rem;
+}
+
+/* Booking Form */
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+select,
+input[type="datetime-local"] {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.95rem;
+  flex: 1;
+  min-width: 160px;
+  font-family: 'Poppins', sans-serif;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #c9a14c;
+  box-shadow: 0 0 0 2px rgba(201, 161, 76, 0.2);
+}
+
+/* Search Button */
+.search-button {
+  background-color: black;
+  color: white;
+  padding: 0.65rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #b18b3c;
+}
+
+.custom-message {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 600px;
+}

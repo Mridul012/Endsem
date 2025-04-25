@@ -1,0 +1,95 @@
+
+
+.jet-list-container {
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.jet-list-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #2c3e50; /* Darker shade for a sophisticated look */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.jet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.jet-card {
+  background: white;
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.jet-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.jet-image-wrapper {
+  height: 220px; /* Slightly taller image area */
+  overflow: hidden;
+}
+
+.jet-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s; /* Smooth zoom effect */
+}
+
+.jet-card:hover .jet-image {
+  transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+.jet-info {
+  padding: 20px; /* More padding for a spacious feel */
+}
+
+.jet-model {
+  font-size: 1.6em;
+  color: black; /* Elegant blue */
+  margin: 0;
+  font-weight: bold; /* Bold model name */
+}
+
+.jet-manufacturer {
+  font-size: 1.2em;
+  color: #7f8c8d; /* Softer gray for manufacturer */
+}
+
+.jet-details {
+  margin-top: 10px;
+}
+
+.jet-details p {
+  margin: 5px 0;
+  color: #34495e; /* Darker gray for details */
+}
+
+.btn {
+  background-color:gray; /* Elegant blue */
+  color: white;
+  border: none;
+  padding: 12px 18px; /* Slightly larger button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; /* Bold button text */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: black; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on button hover */
+}
+
+.price{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
