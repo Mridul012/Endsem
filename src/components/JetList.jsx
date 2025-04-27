@@ -10,7 +10,7 @@ const JetList = () => {
   useEffect(() => {
     const fetchJets = async () => {
       try {
-        const res = await fetch("http://localhost:3000/jets");
+        const res = await fetch("http://10.254.203.38:3000/jets");
         const data = await res.json();
         setJets(data);
         setLoading(false);
