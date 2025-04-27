@@ -2,15 +2,15 @@
 
 .jet-list-container {
   padding: 20px;
-  background-color: #f5f5f5; /* Light background for contrast */
+  background-color: #f5f5f5; 
 }
 
 .jet-list-title {
   text-align: center;
   font-size: 2.5em;
-  color: #2c3e50; /* Darker shade for a sophisticated look */
-  margin-bottom: 20px;
-  font-family: 'Arial', sans-serif; /* Clean font */
+  color: #2c3e50; 
+  margin-bottom: 90px;
+  font-family: 'Arial', sans-serif; 
 }
 
 .jet-grid {
@@ -21,19 +21,19 @@
 
 .jet-card {
   background: white;
-  border-radius: 12px; /* Slightly more rounded corners */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+  border-radius: 12px; 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .jet-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); 
 }
 
 .jet-image-wrapper {
-  height: 220px; /* Slightly taller image area */
+  height: 220px; 
   overflow: hidden;
 }
 
@@ -41,27 +41,27 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s; /* Smooth zoom effect */
+  transition: transform 0.5s; 
 }
 
 .jet-card:hover .jet-image {
-  transform: scale(1.1); /* Zoom effect on image hover */
+  transform: scale(1.1); 
 }
 
 .jet-info {
-  padding: 20px; /* More padding for a spacious feel */
+  padding: 20px; 
 }
 
 .jet-model {
   font-size: 1.6em;
-  color: black; /* Elegant blue */
+  color: black; 
   margin: 0;
-  font-weight: bold; /* Bold model name */
+  font-weight: bold; 
 }
 
 .jet-manufacturer {
   font-size: 1.2em;
-  color: #7f8c8d; /* Softer gray for manufacturer */
+  color: #7f8c8d; 
 }
 
 .jet-details {
@@ -70,26 +70,26 @@
 
 .jet-details p {
   margin: 5px 0;
-  color: #34495e; /* Darker gray for details */
+  color: #34495e; 
 }
 
 .btn {
-  background-color:gray; /* Elegant blue */
+  background-color:gray; 
   color: white;
   border: none;
-  padding: 12px 18px; /* Slightly larger button */
+  padding: 12px 18px; 
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold; /* Bold button text */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  font-weight: bold; 
+  transition: background-color 0.3s, transform 0.3s; 
 }
 
 .btn:hover {
-  background-color: black; /* Darker blue on hover */
-  transform: translateY(-2px); /* Lift effect on button hover */
+  background-color: black; 
+  transform: translateY(-2px);
 }
 
 .price{
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.5rem;
 }

@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Plane } from "lucide-react";
 import "./Navbar.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate =useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,10 +19,10 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Jets", href: "#jets" },
-    { name: "Services", href: "#services" },
-    { name: "Membership", href: "#membership" },
+    { name: "Home", href: "#home" , path:"/" },
+    { name: "Jets", href: "#jets", path:"/jets"},
+    { name: "Services", href: "#services",path:"/services" },
+    { name: "Membership", href: "#membership" , path:"/membership" },
   ];
 
   return (
@@ -32,13 +34,13 @@ export default function Navbar() {
 
         <div className="nav-links">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link">
+            <a key={link.name} href={link.href} className="nav-link" onClick={()=>navigate(link.path)}>
               {link.name}
             </a>
           ))}
         </div>
 
-        <a href="#book" className="book-btn">
+        <a href="#book" className="book-btn" onClick={()=>navigate("/booking")}>
           Book Now
         </a>
 

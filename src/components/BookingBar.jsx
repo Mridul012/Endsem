@@ -47,7 +47,7 @@ const BookingBar = () => {
   return (
     <>
       <div className="booking-bar">
-        {/* Jet Type Toggle */}
+
         <div className="jet-tabs">
           <button
             className={`jet-tab ${jetType === 'jet' ? 'active' : ''}`}
@@ -63,7 +63,7 @@ const BookingBar = () => {
           </button>
         </div>
 
-        {/* Trip Type Radios */}
+
         <div className="trip-types">
           {["ONE-WAY", "ROUND-TRIP", "MULTI-CITY"].map((type) => (
             <label key={type}>
@@ -78,9 +78,9 @@ const BookingBar = () => {
           ))}
         </div>
 
-        {/* Booking Form */}
+
         <div className="booking-form">
-          {/* Departure Dropdown */}
+
           <select value={departure} onChange={(e) => setDeparture(e.target.value)} required>
             <option>Departure</option>
             <option>Mumbai (BOM)</option>
@@ -95,7 +95,7 @@ const BookingBar = () => {
             <option>Jaipur (JAI)</option>
           </select>
 
-          {/* Arrival Dropdown */}
+
           <select value={arrival} onChange={(e) => setArrival(e.target.value)} required>
             <option>Arrival</option>
             <option>Delhi (DEL)</option>
