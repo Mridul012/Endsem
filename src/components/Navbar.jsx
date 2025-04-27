@@ -1,12 +1,87 @@
+// import { useState, useEffect } from "react";
+// import { Menu, X, Plane } from "lucide-react";
+// import "./Navbar.css";
+// import { useNavigate } from "react-router-dom";
+
+// export default function Navbar() {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [isScrolled, setIsScrolled] = useState(false);
+//   const navigate =useNavigate()
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setIsScrolled(window.scrollY > 10);
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+//   const navLinks = [
+//     { name: "Home", href: "#home" , path:"/" },
+//     { name: "Jets", href: "#jets", path:"/jets"},
+//     { name: "Services", href: "#services",path:"/services" },
+//     { name: "Membership", href: "#membership" , path:"/membership" },
+//   ];
+
+//   return (
+//     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+//       <div className="navbar-container">
+//         <a href="#" className="logo">
+//           <span className="logo-text">Fly Premium</span>
+//         </a>
+
+//         <div className="nav-links">
+//           {navLinks.map((link) => (
+//             <a key={link.name} href={link.href} className="nav-link" onClick={()=>navigate(link.path)}>
+//               {link.name}
+//             </a>
+//           ))}
+//         </div>
+
+//         <a href="#book" className="book-btn" onClick={()=>navigate("/booking")}>
+//           Book Now
+//         </a>
+
+//         <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+//           {isMenuOpen ? <X className="icon" /> : <Menu className="icon" />}
+//         </button>
+//       </div>
+
+//       {isMenuOpen && (
+//         <div className="mobile-menu">
+//           {navLinks.map((link) => (
+//             <a
+//               key={link.name}
+//               href={link.href}
+//               className="mobile-link"
+//               onClick={() => setIsMenuOpen(false)}
+//             >
+//               {link.name}
+//             </a>
+//           ))}
+//           <a
+//             href="#book"
+//             className="mobile-book-btn"
+//             onClick={()=>navigate("/booking")}
+//           >
+//             Book Now
+//           </a>
+//         </div>
+//       )}
+//     </nav>
+//   );
+// }
+
 import { useState, useEffect } from "react";
 import { Menu, X, Plane } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate =useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,30 +94,35 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Home", href: "#home" , path:"/" },
-    { name: "Jets", href: "#jets", path:"/jets"},
-    { name: "Services", href: "#services",path:"/services" },
-    { name: "Membership", href: "#membership" , path:"/membership" },
+    { name: "Home", href: "#home", path: "/" },
+    { name: "Jets", href: "#jets", path: "/jets" },
+    { name: "Services", href: "#services", path: "/services" },
+    { name: "Membership", href: "#membership", path: "/membership" },
   ];
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <a href="#" className="logo">
+        <Link to="/" className="logo">
           <span className="logo-text">Fly Premium</span>
-        </a>
+        </Link>
 
         <div className="nav-links">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link" onClick={()=>navigate(link.path)}>
+            <Link
+              key={link.name}
+              to={link.path} 
+              className="nav-link"
+              onClick={() => setIsMenuOpen(false)} 
+            >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
-        <a href="#book" className="book-btn" onClick={()=>navigate("/booking")}>
+        <Link to="/booking" className="book-btn">
           Book Now
-        </a>
+        </Link>
 
         <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? <X className="icon" /> : <Menu className="icon" />}
@@ -52,22 +132,22 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="mobile-menu">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.path} 
               className="mobile-link"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => setIsMenuOpen(false)} 
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#book"
+          <Link
+            to="/booking"
             className="mobile-book-btn"
             onClick={() => setIsMenuOpen(false)}
           >
             Book Now
-          </a>
+          </Link>
         </div>
       )}
     </nav>

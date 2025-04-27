@@ -2,12 +2,15 @@ import React from "react";
 import "./Membership.css";
 import Navbar from "./Navbar";
 
+
 export default function Membership() {
+
+
   return (
     <main className="membership-page">
 
       <section className="membership-hero-section">
-        <div className="hero-content">
+        <div className="hero-content" >
           <h1>Elite Membership Programs</h1>
           <p>Elevate your travel experience with exclusive benefits and unparalleled luxury</p>
           <a href="#tiers" className="explore-btn">
