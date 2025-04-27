@@ -98,20 +98,7 @@ import "./Footer.css"
                 </div>
               </div>
   
-              <div className="footer-newsletter">
-                <h3>Newsletter</h3>
-                <p>Subscribe to receive updates on exclusive offers and news</p>
-                <form className="newsletter-form">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    required
-                  />
-                  <button type="submit" aria-label="Subscribe">
-                    <Send size={18} />
-                  </button>
-                </form>
-              </div>
+             
             </div>
           </div>
         </div>

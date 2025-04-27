@@ -94,31 +94,7 @@
     color: #bbb;
   }
   
-  .newsletter-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .newsletter-form input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-  
-  .newsletter-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .newsletter-form button:hover {
-    background-color: #0056b3;
-  }
+ 
   
   .footer-bottom {
     margin-top: 40px;
@@ -133,11 +109,13 @@
   .copyright {
     font-size: 14px;
     color: #bbb;
+    margin-left: 20px;
   }
   
   .legal-links a {
     color: #bbb;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
     font-size: 14px;
     text-decoration: none;
   }
