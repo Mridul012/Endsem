@@ -11,6 +11,7 @@ import Membership from './components/Membership'
 import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 
+
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
       <Route path ="/jets" element={<JetList/>}/>
       <Route path='/booking' element={<BookingShow/>}/>
       <Route path="/footer" element={<Footer/>}/>
+     
 
   
 
