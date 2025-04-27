@@ -8,9 +8,11 @@ import JetList from "./JetList";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+
 export default function Hero() {
   const navigate = useNavigate();
   const [showJets, setShowJets] = useState(false);
+
 
   const handleSearch = () => {
     setShowJets(true);
@@ -114,7 +116,7 @@ export default function Hero() {
               <div className="item-content">
                 <h3 className="item-title">{service.title}</h3>
                 <p className="item-description">{service.description}</p>
-                <button className="item-button">{service.buttonText}</button>
+                <button className="item-button" onClick={()=>navigate("./membership")}>{service.buttonText}</button>
               </div>
             </div>
           ))}
