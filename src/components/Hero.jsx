@@ -46,19 +46,19 @@ export default function Hero() {
       title: "VJ25",
       description: "Perfect for flying between 25 to 49 hours each year, with guaranteed flight availability on all non-peak and most peak days.",
       buttonText: "View Membership",
-      imgUrl: "./img1.png", 
+      imgUrl: "./images/img1.png", 
     },
     {
       title: "CORPORATE",
       description: "A full suite of flexible business jet solutions for corporations and executives around the world.",
       buttonText: "View Membership",
-      imgUrl: "./img2.png", 
+      imgUrl: "./images/img2.png", 
     },
     {
       title: "DIRECT",
       description: "An on demand flight at dynamic rates.",
       buttonText: "Request a Quote",
-      imgUrl: "./img3.png", 
+      imgUrl: "./images/img3.png", 
     },
   ];
 

@@ -28,7 +28,7 @@ body {
 .membership-hero-section {
   height: 70vh;
   background-image: linear-gradient(rgba(10, 35, 66, 0.7), rgba(10, 35, 66, 0.7)),
-    url("./img4.png");
+    url("./images/img4.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
