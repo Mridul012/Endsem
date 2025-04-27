@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { UserRound, Car, UtensilsCrossed, Plane, Ticket } from "lucide-react";
-import "./services.css";
+import "./Services.css";
 
 export default function Services() {
   return (
