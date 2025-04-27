@@ -2,7 +2,11 @@
 .footer {
     background-color: #0A2342;
     color: #fff;
-    padding: 40px 0;
+
+    padding: 20px 0; /* Adjust padding to make it consistent */
+    margin: 0; 
+    margin-bottom: -30px;
+
   }
   
   .footer-top {

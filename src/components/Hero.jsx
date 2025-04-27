@@ -120,9 +120,11 @@ export default function Hero() {
               </div>
             </div>
           ))}
-          <Footer/>
+          
         </div>
+       
       </section>
+      <Footer/>
     </>
   );
 }
