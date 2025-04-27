@@ -89,7 +89,7 @@ import "./Footer.css"
                   </div>
                   <div className="contact-item">
                     <Phone size={18} />
-                    <p>+1 (800) 123-4567</p>
+                    <p>+91 1234567890</p>
                   </div>
                   <div className="contact-item">
                     <Mail size={18} />
