@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./JetList.css"; 
 import Footer from "./Footer";
+import dataJson from "../../db.json"
 
 const JetList = () => {
   const [jets, setJets] = useState([]);
@@ -10,9 +11,9 @@ const JetList = () => {
   useEffect(() => {
     const fetchJets = async () => {
       try {
-        const res = await fetch("http://10.254.203.38:3000/jets");
-        const data = await res.json();
-        setJets(data);
+        // const res = await fetch("http://jsonkeeper.com/b/99WA");
+        // const data = await res.json();
+        setJets(dataJson.jets);
         setLoading(false);
       } catch (error) {
         console.error("Failed to fetch jets:", error);
@@ -63,7 +64,7 @@ const JetList = () => {
           ))}
         </div>
       </div>
-
+      {/* Footer is now outside the main content */}
       <Footer />
     </>
   );
